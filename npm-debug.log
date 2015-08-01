@@ -1,28 +1,70 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/home/ubuntu/.nvm/v0.10.35/bin/node',
 1 verbose cli   '/home/ubuntu/.nvm/v0.10.35/bin/npm',
-1 verbose cli   'start' ]
+1 verbose cli   'install',
+1 verbose cli   'method-override' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info prestart quiz@0.0.0
-6 info start quiz@0.0.0
-7 verbose unsafe-perm in lifecycle true
-8 info quiz@0.0.0 Failed to exec start script
-9 error quiz@0.0.0 start: `node ./bin/www`
-9 error Exit status 8
-10 error Failed at the quiz@0.0.0 start script.
-10 error This is most likely a problem with the quiz package,
-10 error not with npm itself.
-10 error Tell the author that this fails on your system:
-10 error     node ./bin/www
-10 error You can get their info via:
-10 error     npm owner ls quiz
-10 error There is likely additional logging output above.
-11 error System Linux 3.14.13-c9
-12 error command "/home/ubuntu/.nvm/v0.10.35/bin/node" "/home/ubuntu/.nvm/v0.10.35/bin/npm" "start"
-13 error cwd /home/ubuntu/workspace/quiz
-14 error node -v v0.10.35
-15 error npm -v 1.4.28
-16 error code ELIFECYCLE
-17 verbose exit [ 1, true ]
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'method-override', null ]
+6 verbose cache add name=undefined spec="method-override" args=["method-override",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'method-override',
+7 verbose parsed url   path: 'method-override',
+7 verbose parsed url   href: 'method-override' }
+8 silly lockFile 0b00fa9d-method-override method-override
+9 verbose lock method-override /home/ubuntu/.npm/0b00fa9d-method-override.lock
+10 silly lockFile 0b00fa9d-method-override method-override
+11 silly lockFile 0b00fa9d-method-override method-override
+12 verbose addNamed [ 'method-override', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile dd70539b-method-override method-override@
+15 verbose lock method-override@ /home/ubuntu/.npm/dd70539b-method-override.lock
+16 silly addNameRange { name: 'method-override', range: '*', hasData: false }
+17 verbose request where is /method-override
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id e42507d57eb86b56
+20 verbose url raw /method-override
+21 verbose url resolving [ 'https://registry.npmjs.org/', './method-override' ]
+22 verbose url resolved https://registry.npmjs.org/method-override
+23 verbose request where is https://registry.npmjs.org/method-override
+24 info trying registry request attempt 1 at 18:49:42
+25 http GET https://registry.npmjs.org/method-override
+26 info retry will retry, error on last attempt: Error: connect ECONNREFUSED
+27 info trying registry request attempt 2 at 18:49:53
+28 http GET https://registry.npmjs.org/method-override
+29 info retry will retry, error on last attempt: Error: connect ECONNREFUSED
+30 info trying registry request attempt 3 at 18:50:54
+31 http GET https://registry.npmjs.org/method-override
+32 silly lockFile dd70539b-method-override method-override@
+33 silly lockFile dd70539b-method-override method-override@
+34 error Error: connect ECONNREFUSED
+34 error     at errnoException (net.js:905:11)
+34 error     at Object.afterConnect [as oncomplete] (net.js:896:19)
+34 error  { [Error: connect ECONNREFUSED]
+34 error   code: 'ECONNREFUSED',
+34 error   errno: 'ECONNREFUSED',
+34 error   syscall: 'connect',
+34 error   parent: 'quiz' }
+35 error If you are behind a proxy, please make sure that the
+35 error 'proxy' config is set properly.  See: 'npm help config'
+36 error System Linux 3.14.13-c9
+37 error command "/home/ubuntu/.nvm/v0.10.35/bin/node" "/home/ubuntu/.nvm/v0.10.35/bin/npm" "install" "method-override"
+38 error cwd /home/ubuntu/workspace/quiz
+39 error node -v v0.10.35
+40 error npm -v 1.4.28
+41 error syscall connect
+42 error code ECONNREFUSED
+43 error errno ECONNREFUSED
+44 error stack Error: connect ECONNREFUSED
+44 error stack     at errnoException (net.js:905:11)
+44 error stack     at Object.afterConnect [as oncomplete] (net.js:896:19)
+45 verbose exit [ 1, true ]
